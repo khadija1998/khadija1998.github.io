@@ -1,0 +1,246 @@
+/* Define standard variables and values for website */
+$padding: 0px;
+$margin:0px;
+$btcolor:#1078AD;
+$textcolor:#7F7F7F;
+$textclr:#000000;
+$whitcolor:#FFFFFF;
+$ceilclr:#D0E5F0;
+$jaclr:#F4CF1B;
+$verclr:#369D53;
+$fontsize: 16px;
+$margin-top:0px;
+$mrgin-bottom:0px;
+
+* {
+    padding: $padding;
+    margin: $margin;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    font-size: $fontsize;
+    
+    
+
+
+}
+
+.header1 {
+
+    background-image: url("../images/png/img-1.png");
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+
+    .navbar ul li {
+        display: inline;
+        padding: $padding+20px;
+
+
+        a:hover {
+            color: $btcolor;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: $textclr;
+
+        }
+
+
+
+    }
+}
+
+.test {
+    border-radius: 10px;
+    width: 80px;
+    height: 30px;
+    border-color: $btcolor;
+    color: $btcolor;
+    border: solid 1px;
+
+}
+
+
+.header2 {
+    text-align: center;
+    background: url("../images/png/Tracé 11.png");
+    height: 100%;
+
+
+    p {
+        color: $btcolor;
+    }
+
+
+
+}
+
+.article {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+    .parti2 {
+        .bleu {
+            color: $btcolor;
+        }
+
+        .gris {
+            color: $textcolor
+        }
+
+
+
+    }
+
+}
+
+.boutton {
+    width: 450px;
+    height: 40px;
+    color: $whitcolor;
+    background-color: $btcolor;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.article2 {
+
+    text-align: center;
+
+    .titre {
+        color: $btcolor;
+    }
+
+    .image1 {
+        display: flex;
+        justify-content: space-evenly;
+
+
+    }
+}
+
+.article3 {
+    background-color: $btcolor;
+    height:50vh;
+    
+
+    .title {
+        text-align: center;
+        color: $ceilclr;
+    }
+
+
+    .mains {
+        display: flex;
+        justify-content: space-between;
+
+
+        .main1 {
+            .texwhit {
+                color: $whitcolor;
+            }
+
+            .span {
+                color: $textclr;
+            }
+        }
+
+        .main2 {
+            text-align: center;
+
+            p {
+                color: $jaclr;
+            }
+
+            button {
+                background-color: $jaclr;
+                border: none;
+                height: 40px;
+                width: 120px;
+                border-radius: 3px;
+            }
+
+            a {
+                color: $whitcolor;
+                text-decoration-color: $jaclr;
+            }
+        }
+    }
+}
+
+.article4 {
+
+    background-color: $ceilclr;
+    text-align: center;
+   height:22vh;
+
+    h1 {
+        color: $btcolor;
+
+    }
+
+
+}
+
+.btn {
+    @extend .boutton;
+}
+
+.footer {
+    margin-top: 20px;
+    .logsante img {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .ft {
+        display: flex;
+        justify-content: space-around;
+
+        .Nv {text-align: center;
+            line-height: 3;
+            a {
+                text-decoration: none;
+                color: $textclr;
+        
+            }
+            a:hover{
+                color: $btcolor;
+                    }
+    }
+        
+    }
+
+    button {
+        @extend .test;
+        background-color: $whitcolor;
+
+    }
+
+.contact{
+text-align: center;
+line-height: 3;
+
+    .bl{
+color: $btcolor;
+}
+.vert{
+    color: $verclr;
+}
+}
+.text{
+    margin-top: $margin-top+50px;
+    line-height: 2;
+    .grs{
+        color: $textcolor;
+    }
+}
+}
